@@ -1,16 +1,13 @@
-## Hi there 👋
+# Delegated Selves
 
-<!--
-**delegated-selves-ai/delegated-selves-ai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Workshop homepage for **Delegated Selves: Privacy, Security, and Identity for AI Agents in Social Environments**, a CHI '27 Workshop in Pittsburgh, May 10–14, 2027.
 
-Here are some ideas to get you started:
+The site is a dependency-free static page. Open `index.html` locally to preview it. GitHub Pages deployment is configured in [`.github/workflows/pages.yml`](.github/workflows/pages.yml) and runs on pushes to `main`.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Local preview
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000.
