@@ -1,0 +1,40 @@
+.people {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 28px;
+  padding-top: 36px;
+}
+
+.person img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #42524a;
+  margin-bottom: 18px;
+  filter: saturate(.82);
+  transition: filter .2s ease;
+}
+
+.person:hover img { filter: saturate(1); }
+
+.portrait-note {
+  max-width: 620px;
+  margin: 46px 0 0;
+  color: #819087;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .people {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 18px;
+    padding-top: 28px;
+  }
+
+  .person img { margin-bottom: 13px; }
+  .people strong { font-size: 16px; }
+}
